@@ -3,9 +3,13 @@ import React from 'react';
 function IndexPage() {
   return (
     <main>
-      <h1 className="text-3xl        font-bold underline">
-        Hello world!
-      </h1>
+      <section className="bg-slate-600">
+        <h1 className="">Hello World!</h1>
+
+      </section>
+      <section className="bg-slate-50">
+        <h1>Testing</h1>
+      </section>
     </main>
   );
 }
