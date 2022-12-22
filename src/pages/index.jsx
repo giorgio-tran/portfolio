@@ -1,23 +1,21 @@
-import { Link } from 'gatsby-link';
 import React from 'react';
+import LinkNewTab from '../components/LinkNewTab';
 
 const IndexPage = () => (
   <main className="min-h-screen flex flex-col align-middle w-screen">
-    <div className="w-full max-w-7xl flex flex-col align-middle mx-auto px-3">
+    <div className="w-full max-w-6xl flex flex-col align-middle mx-auto px-3">
       <section className="flex w-full justify-between">
         <div className="flex flex-col align-middle justify-center">
-          <h1 className="text-6xl md:text-9xl p-0">Giorgio Tran</h1>
-          <p className="text-center pt-2 text-lg">
-            <b>MSCS Student @ UHM</b>
-          </p>
+          <h1 className="text-6xl md:text-9xl p-0">Giorgio</h1>
+          <h1 className="text-6xl md:text-9xl p-0">Tran</h1>
         </div>
-        <div className="flex flex-col justify-center text-4xl">
-          <Link to="/404">LinkedIn</Link>
-          <Link to="/404">GitHub</Link>
-          <Link to="/404">Email</Link>
+        <div className="flex flex-col justify-end text-3xl md:text-6xl md:gap-2">
+          <LinkNewTab link="https://linkedin.com/in/giorgio-tran-03a656139/" text="LinkedIn" />
+          <LinkNewTab link="https://github.com/giorgio-tran/" text="GitHub" />
+          <a href="/404">Resume</a>
         </div>
       </section>
-      <section className="bg-slate-50">
+      <section>
         <h1>Testing</h1>
       </section>
     </div>
