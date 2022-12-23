@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import projects from '../info/projects';
 
 const IndexPage = () => (
-  <main className="min-h-screen flex flex-col align-middle w-full">
+  <div className="min-h-screen flex flex-col align-middle w-full">
     <div className="w-full max-w-6xl flex flex-col align-middle mx-auto px-5">
       <section className="flex w-full justify-between pb-10 md:pb-72">
         <div className="flex flex-col align-middle justify-center">
@@ -27,12 +27,15 @@ const IndexPage = () => (
           <p>Coffee Aficionado.</p>
         </div>
       </section>
-      <section>
+      <section className="pb-10 md:pb-72">
         <h1 className="border-b-2 border-b-black text-3xl md:text-6xl pb-2">PROJECTS</h1>
         {projects.map((project) => (<ProjectCard project={project} />))}
       </section>
     </div>
-  </main>
+    <footer className="w-full max-w-6xl flex flex-col align-middle mx-auto px-5 pb-10">
+      <h1 className="text-xl text-right">Copyright &copy; 2022</h1>
+    </footer>
+  </div>
 );
 
 export default IndexPage;
