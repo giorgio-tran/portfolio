@@ -1,8 +1,10 @@
 import React from 'react';
 import LinkNewTab from '../components/LinkNewTab';
+import ProjectCard from '../components/ProjectCard';
+import projects from '../info/projects';
 
 const IndexPage = () => (
-  <main className="min-h-screen flex flex-col align-middle w-screen">
+  <main className="min-h-screen flex flex-col align-middle w-full">
     <div className="w-full max-w-6xl flex flex-col align-middle mx-auto px-5">
       <section className="flex w-full justify-between pb-10 md:pb-72">
         <div className="flex flex-col align-middle justify-center">
@@ -27,6 +29,7 @@ const IndexPage = () => (
       </section>
       <section>
         <h1 className="border-b-2 border-b-black text-3xl md:text-6xl pb-2">PROJECTS</h1>
+        {projects.map((project) => (<ProjectCard project={project} />))}
       </section>
     </div>
   </main>
@@ -34,4 +37,4 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-export const Head = () => <title>Giorgio Tran</title>;
+export const Head = () => <title>Home</title>;
