@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Pill from './Pill';
 
 const ProjectCard = ({ project }) => (
-  <div className="w-full py-4 flex gap-10">
-    <div className="h-64 w-64">
+  <div className="w-full py-4 grid md:grid-cols-6 md:gap-10">
+    <div className="md:col-span-2 flex flex-auto">
       <img className="w-full h-full object-contain" alt="project" src={project.image} />
     </div>
-    <div className="flex flex-col justify-center gap-3">
+    <div className="md:col-span-4 flex flex-col gap-3">
       <h1 className="text-3xl">{project.title}</h1>
       <div className="flex gap-2 flex-wrap">
         {project.tech.map((data) => (<Pill data={data} />))}
