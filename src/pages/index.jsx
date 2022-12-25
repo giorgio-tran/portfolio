@@ -11,7 +11,7 @@ const IndexPage = () => {
   const elementLoad = useFadeInOnLoad();
 
   return (
-    <div className="min-h-screen flex flex-col align-middle w-full">
+    <div className="min-h-screen flex flex-col align-middle w-full bg-noire-black text-noire-beige py-10">
       <div className="w-full max-w-screen-xl flex flex-col align-middle mx-auto px-5 fade-in" ref={elementLoad}>
         <div>
           <section className="flex w-full justify-between pb-24 md:pb-72">
@@ -26,7 +26,7 @@ const IndexPage = () => {
             </div>
           </section>
           <section className="pb-20 md:pb-72">
-            <h1 className="w-full border-b-2 border-b-black text-3xl md:text-6xl pb-2">
+            <h1 className="w-full border-b-2 border-b-slate-300 text-3xl md:text-6xl pb-2">
               ABOUT ME
             </h1>
             <div className="py-2 flex flex-col gap-1 text-2xl">
@@ -37,12 +37,12 @@ const IndexPage = () => {
           </section>
         </div>
         <section className="pb-10 md:pb-72">
-          <h1 className="border-b-2 border-b-black text-3xl md:text-6xl pb-2">PROJECTS</h1>
+          <h1 className="border-b-2  border-b-slate-300 text-3xl md:text-6xl pb-2">PROJECTS</h1>
           <StockProjectCard project={projects[0]} />
           {projects.slice(1).map((project) => (<ProjectCard project={project} />))}
         </section>
       </div>
-      <footer className="w-full max-w-6xl flex flex-col align-middle mx-auto px-5 pb-10">
+      <footer className="w-full max-w-6xl flex flex-col align-middle mx-auto px-5">
         <h1 className="text-xl text-right">Copyright &copy; 2022</h1>
       </footer>
     </div>
