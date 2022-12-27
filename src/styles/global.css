@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #171718;
+  color: #faf7f2;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 2s;

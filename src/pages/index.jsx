@@ -11,7 +11,7 @@ const IndexPage = () => {
   const elementLoad = useFadeInOnLoad();
 
   return (
-    <div className="min-h-screen flex flex-col align-middle w-full bg-noire-black text-noire-beige py-10">
+    <div className="min-h-screen flex flex-col align-middle w-full py-10">
       <div className="w-full max-w-screen-xl flex flex-col align-middle mx-auto px-5 fade-in" ref={elementLoad}>
         <div>
           <section className="flex w-full justify-between pb-24 md:pb-72">
@@ -51,4 +51,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home</title>;
+export const Head = () => <title>Giorgio Tran - Portfolio</title>;
