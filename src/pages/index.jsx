@@ -2,12 +2,11 @@ import React from 'react';
 import LinkNewTab from '../components/LinkNewTab';
 import ProjectCard from '../components/ProjectCard';
 import projects from '../info/projects';
-// import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
+import resume from '../images/resume.pdf';
 import useFadeInOnLoad from '../hooks/useFadeInOnLoad';
 import StockProjectCard from '../components/StockProjectCard';
 
 const IndexPage = () => {
-  // const element = useFadeInOnScroll();
   const elementLoad = useFadeInOnLoad();
 
   return (
@@ -22,7 +21,7 @@ const IndexPage = () => {
             <div className="flex flex-col justify-end text-3xl md:text-6xl md:gap-2">
               <LinkNewTab link="https://linkedin.com/in/giorgio-tran-03a656139/" text="LinkedIn" />
               <LinkNewTab link="https://github.com/giorgio-tran/" text="GitHub" />
-              <LinkNewTab link="#" text="Resume" />
+              <LinkNewTab link={resume} text="Resume" />
             </div>
           </section>
           <section className="pb-20 md:pb-72">
