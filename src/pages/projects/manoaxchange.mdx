@@ -1,18 +1,17 @@
 import Container from '../../components/Container.jsx';
 import Header from '../../components/Header.jsx';
-import Paragraph from '../../components/Paragraph.jsx';
 
 <Container>
   <Header 
-    site="https://giorgio-tran.github.io/odin-sketch/"
-    github="https://github.com/giorgio-tran/odin-sketch/"
+    site="https://manoaxchange.github.io/"
+    github="https://github.com/manoaxchange/manoaxchange"
   >
-    Sketch
+    ManoaXchange
   </Header>
 
   ![Test](../../images/sketch/sketch.png "A screenshot of Sketch in action.")
-  
-  <Paragraph>
-    Sketch was one of my first projects when I started learning **HTML, CSS, and JavaScript**. It was an assignment from The Odin Project and it helped me learn how to manipulate the DOM (a way to interact with webpages using code). In Sketch, the user can make drawings by clicking and dragging their mouse. The user may also adjust the number of squares in the grid (up to 100), and reset the grid.
-  </Paragraph>
+
+  <br />
+  ManoaXchange is a web application prototype designed to help UH Manoa students, faculty, and alumni sell and buy items. This application would help the UH community repurpose and reuse goods. I led this project by designing the architecture of the application, designing the UI/UX, and lastly using the Gmail API and Cloudinary API. I created API endpoints via Express to establish communication between the client and APIs. A highlight from this project was the implementation of image uploading. Upon uploading an image, the user is able to see a preview of the image. Once submitted, the image&apos;s data URL is uploaded to Cloudinary by being sent as a parameter through the API endpoint. Then, the response returns Cloudinary&apos;s URL of the image, which is then stored in MongoDB and used as the image source. Overall, this application taught me a lot about using APIs and creating a mobile responsive user interface.
+  <br />
 </Container>
