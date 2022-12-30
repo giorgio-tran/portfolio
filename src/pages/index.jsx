@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import LinkNewTab from '../components/LinkNewTab';
 import ProjectCard from '../components/ProjectCard';
@@ -28,10 +29,8 @@ const IndexPage = () => {
             <h1 className="w-full border-b-2 border-b-slate-300 text-3xl md:text-6xl pb-2">
               ABOUT ME
             </h1>
-            <div className="py-2 flex flex-col gap-1 text-2xl">
-              <p>Master&apos;s in Computer Science 2024.</p>
-              <p>Keyboard Enthusiast.</p>
-              <p>Coffee Aficionado.</p>
+            <div className="py-2 flex flex-col gap-1 text-xl md:text-2xl">
+              Hello, my name is Giorgio Tran. I am a Master&apos;s in Computer Science student at the University of Hawaii at Manoa expected to graduate in Fall 2024.
             </div>
           </section>
         </div>
